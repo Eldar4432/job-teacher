@@ -1,0 +1,92 @@
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding-bottom: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .brandIconContainer {
+    margin-right: 11.5rem;
+  }
+  
+  .socialMedia {
+    margin-left: 11.5rem;
+  }
+  .brandIcon {
+    max-width: 100%;
+  }
+  
+  .brandText {
+    font-size: 0.875rem;
+    color: #495057;
+    text-align: center;
+  }
+  
+  .contactInfo,
+  .socialMedia {
+    margin-bottom: 2rem;
+  }
+  
+  .contactInfo {
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 1rem;
+    color: #007bff;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .infoText,
+  .socialMediaLink {
+    font-size: 0.875rem;
+    color: #495057;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .infoText:hover,
+  .socialMediaLink:hover {
+    color: #007bff;
+  }
+  
+  .footerText {
+    font-size: 0.875rem;
+    color: #495057;
+    font-weight: 300;
+    margin-top: 1.75rem;
+    text-align: center;
+  }
+  
+  .madeByText {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.875rem;
+    color: #495057;
+    text-align: center;
+  }
+  
+  .madeByLink {
+    font-size: 0.875rem;
+    color: #820ad1;
+    text-decoration: none;
+    margin-left: 0.25rem;
+    transition: color 0.3s ease;
+  }
+  
+  .madeByLink:hover {
+    color: #007bff;
+  }
+  

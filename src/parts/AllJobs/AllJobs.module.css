@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(211, 171, 119);
+    column-gap: 0.125rem; /* 2px */
+}
+
+.grid {
+    column-gap: 0.125rem; /* 2px */
+    width: auto;
+    display: flex;
+    height: auto;
+    background-color: aqua;
+}

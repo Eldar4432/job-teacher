@@ -1,0 +1,23 @@
+.StepIndicatorContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .StepIndicator {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .StepIndicator.completed {
+    background-color: #3c9f3f;
+    color: white;
+  }
+  

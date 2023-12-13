@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  @apply mb-28;
+}
+
+.active-link {
+  @apply text-theme-purple;
+}
+
+.header {
+  @apply flex flex-col py-1 mb-1 justify-between;
+}
+
+.hero {
+  @apply container px-5 flex flex-col mx-auto;
+}
+
+.portofolio-card:hover .img-hover {
+  @apply opacity-25;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    @apply container w-full flex-row py-8 px-10 mt-2 mb-4 mx-auto items-center content-center border-b border-gray-100;
+  }
+
+  .hero {
+    @apply container flex-row mx-auto mt-8;
+  }
+}

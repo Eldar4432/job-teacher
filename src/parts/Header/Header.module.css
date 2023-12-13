@@ -1,0 +1,78 @@
+.header {
+  background-color: #ffffff;
+  margin-top: -35px;
+  height: 100px;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  left: auto;
+  right: auto;
+  z-index: 999;
+  @apply flex flex-col py-1 mb-1 justify-between;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    @apply container w-full flex-row py-8 px-10 mt-2 mb-4 mx-auto items-center content-center border-b border-gray-100;
+  }
+
+  .hero {
+    @apply container flex-row mx-auto mt-8;
+  }
+}
+
+
+
+
+/* Header.module.css */
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.headerContainer {
+  flex: 1;
+}
+
+.headerLinks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.activeLink {
+  color: #4CAF50;
+}
+
+.buttonHeader {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.languageSelect {
+  width: 120px;
+  position: fixed;
+  z-index: 999;
+}
+
+
+.fixedPosition {
+  position: fixed;
+  top: 0; /* Или другое значение верхнего отступа, которое вам подходит */
+  left: 0;
+  z-index: 999; /* Устанавливаете z-index в значение, которое гарантирует видимость элемента над другими элементами */
+}

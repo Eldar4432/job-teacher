@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import i18n from './i18next/i18next';
+import LandingPage from './pages/LandingPage';
+import Resume from './pages/Resume';
+import TeamPage from './pages/TeamPage';
+import NotFoundPage from './pages/NotFoundPage';
+import LoginSignup from './pages/LoginSignup';
+import './assets/css/styles.css';
 
-function App() {
+
+const isAuthenticated = () => {
+  return true;
+};
+
+const PrivateRoute = ({ element, ...props }) => {
+  return isAuthenticated() ? element : null; 
+};
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<LoginSignup />} />
+      <Route path="/resume" element={<PrivateRoute element={<Resume />} />} />
+      <Route path="/jobs" element={<TeamPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 }
 
