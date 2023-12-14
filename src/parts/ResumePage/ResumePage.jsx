@@ -14,12 +14,10 @@ import NavigationButtons from "./NavigationButton/NavigationButton";
 Modal.setAppElement("#root");
 
 const ResumePage = ({ onClose }) => {
-  const {
-  } = useResumeState();
+  const {} = useResumeState();
 
   const [currentStep, setCurrentStep] = useState(1);
 
-  // Функция для установки следующего шага
   const handleNext = () => {
     setCurrentStep((prevStep) => prevStep + 1);
   };
@@ -29,7 +27,6 @@ const ResumePage = ({ onClose }) => {
     e.preventDefault();
     onClose();
   };
-
 
   return (
     <Fade bottom>

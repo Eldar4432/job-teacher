@@ -6,6 +6,7 @@ const NavigationButtons = ({ currentStep, handleNext, setCurrentStep }) => {
     <div className={styles.ButtonContainer}>
       {currentStep > 1 && (
         <button
+        
           type="button"
           onClick={() => setCurrentStep(currentStep - 1)}
           className={styles.BackButton}

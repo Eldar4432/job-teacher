@@ -32,6 +32,18 @@ const ResumePage1 = ({ onClose }) => {
     }));
   };
 
+  const [pin, setPin] = useState('');
+
+  const handleInputChange = (e) => {
+    let inputValue = e.target.value;
+
+    inputValue = inputValue.replace(/\D/g, '').slice(0, 14);
+
+    if (/^[1-2]?$/.test(inputValue[0])) {
+      setPin(inputValue);
+    }
+  };
+  
   return (
     <div>
       <h1>ЗАПОЛНИТЕ РЕЗЮМЕ</h1>
@@ -107,10 +119,11 @@ const ResumePage1 = ({ onClose }) => {
         <p className={styles.textP}>ПИН</p>
         <input
           className={styles.inputs}
-          pattern="\d*"
+          value={pin}
           maxLength="14"
-          placeholder="например: 123456789"
-          type="number"
+          placeholder="например: 12345678901234"
+          type="text"
+          onChange={handleInputChange}
         />
       </label>
 
